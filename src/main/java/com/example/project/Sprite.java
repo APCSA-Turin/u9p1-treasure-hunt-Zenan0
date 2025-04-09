@@ -8,18 +8,23 @@ public class Sprite {
         this.y = y;
     }
 
-    public int getX(){return 1;}
-    public int getY(){return 1;}
+    public int getX(){return x;}
+    public int getY(){return y;}
 
-    public void setX(){}
-    public void setY(){}
+    public void setX(int x){
+        this.x = x;
+    }
+    public void setY(int y){
+        this.y = y;
+    }
 
     public String getCoords(){ //returns the coordinates of the sprite ->"(x,y)"
-        return "";
+        return "(" + x + "," + y + ")";
     }
 
     public String getRowCol(int size){ //returns the row and column of the sprite -> "[row][col]"
-        return "[][]";
+        int rowNum = size - 1 - y;
+        return "[" + rowNum + "]" + "[" + x + "]";
     }
     
 
