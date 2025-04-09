@@ -63,6 +63,7 @@ public class Game{
                 input = scanner.nextLine();
                 if (input.equals("yes")) { // if the user wants to play again, they have to type yes; if the user does not want to, they can type anything other than yes and the game ends
                     play();
+                    return;
                 } else {
                     return;
                 }
@@ -75,6 +76,7 @@ public class Game{
                 input = scanner.nextLine();
                 if (input.equals("yes")) { // if the user wants to play again, they have to type yes; if the user does not want to, they can type anything other than yes and the game ends
                     play();
+                    return;
                 } else {
                     return;
                 }

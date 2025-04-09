@@ -59,7 +59,7 @@ public class Grid{
     public void gameover(){ //use this method to display a loss
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid.length; j++) {
-                if (!(grid[i][j] instanceof Player)) {
+                if (!(grid[i][j] instanceof Player)) { // replaces all objects except for Player with a skull emoji
                     System.out.print("💀");
                 } else {
                     System.out.print("🐦");
@@ -72,7 +72,7 @@ public class Grid{
     public void win(){ //use this method to display a win 
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid.length; j++) {
-                if (!(grid[i][j] instanceof Player)) {
+                if (!(grid[i][j] instanceof Player)) { // replaces all objects except for Player with a trophy emoji
                     System.out.print("🏆");
                 } else {
                     System.out.print("🐦");
